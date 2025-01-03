@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "frontend/src/App.js",
+      "src": "frontend/build/**/*",
       "use": "@vercel/static"
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/src/$1"
+      "dest": "/frontend/build/$1"
     }
   ]
 }
